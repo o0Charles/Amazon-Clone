@@ -74,7 +74,7 @@ function Login() {
 
         <p>
           AMAZON FAKE terms and conditions would be displayed here. If you
-          continue you accept that yo have read all...
+          continue you accept that you have read all...
         </p>
 
         <button onClick={register} className="login__registerButton">
