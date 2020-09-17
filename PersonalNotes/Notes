@@ -1,0 +1,41 @@
+The header in amazon (for example) refers to all that black band at the top
+and the body to the complete page. Thats why we will be creating diferent js
+files refering to all of the components that we need.
+
+So that black brand at the top will be in the file "Header.js" with capital H
+because its a COMPONENT.
+
+    NOTE: Be sure to have intalled the extention ES7 React/Redux/GraphQL/React-Native snippets
+    in VS code. To search it, on the left side of VS (CTRL + b) there is the extensions tab
+    write es7 and the it is.
+
+    This will help to be faster in the develepment by providing shortcuts.
+
+so when writing rfce on a js file it will render a complete functional component structure.
+
+    Another extension in prettier - code formatter. on settings (CTRL + ,) search for
+    format and there is a format everytime you save. Also search for autosave to autosave.
+
+The App.js is like our main "function" its the center of our app.
+
+By using the terminal (in this case by cd amazon-clone) you can insert icons by installing
+Material Icons for React. There it will show you all the commands you will need for npm
+and after that you can insert icons or even fonts.
+
+
+------------------------ Currency format
+
+You can intall it by using the next command:
+    npm i react-currency-format
+
+This will make it very easy to display currency format
+then import it:
+
+import CurrencyFormat from "react-currency-format";
+<CurrencyFormat/>
+
+*REMEMBER that you can autoimport with CTRL+Space
+
+
+
+Until now, all the compiling errors have been beacause of the sytaxis.

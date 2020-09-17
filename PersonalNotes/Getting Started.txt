@@ -1,0 +1,58 @@
+npx create-react-app amazon-clone
+
+ls - to know you are in the right folder (if not there show you where to "cd")
+
+npm start
+
+That way we can see the app on the browser, the directory and network direction.
+
+----
+
+On firebase click web icon and name the app. and register app.
+
+at stage 3 of fire, copy the command and run it on the terminal.
+
+	first write "sudo " (IF ON MAC!, else ignore this)
+	and afterwards the command, like this:
+
+	sudo npm install -g firebase-tools
+
+the on firebase (in the console) go to the proyect settings and scroll down all over
+to the firebase SDK snippet. Change from automatic to config
+
+copy the code and make a new file in the proyect folder "src". This file should say:
+
+firebase.js
+
+and copy there the code (remember to save everytime)
+
+
+With that and the react logo spinning on the browser we are ready to start!!!
+
+
+--------------------
+extra
+
+We can delete app.test.js, logo.svg and setupTests.js
+
+Since it will show a compiling error, go to App.js and delete all the header that contains
+the compiling error.
+
+Also delete the logo import (line 2), else it will cause problems.
+
+	Tip: add this code replacing the header:
+
+	<h1>Hello, lets start this proyect!</h1>
+
+Go to App.cs and delete everything
+
+Go to index.css to delete the top margin at top with:
+
+* {
+	margin:0;
+}
+
+Go to App.js and add the comment  //BEM (as for the convetion) below the return(
+
+its a the naming convention for styling
+

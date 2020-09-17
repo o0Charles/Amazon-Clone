@@ -1,0 +1,17 @@
+Look at the structure, we have a class header with
+multiple childrens.
+
+Then one of the is header__nav wich has the options. The options (called like that
+because of convenction) are the left thing of the header wich displays a little menu list.
+
+For it to work, we must render the header component in App.js by importing it from
+Header.js
+
+    import Header from "./Header";
+
+-------------- After creating the checkout route ----------
+
+If we look at the App.js, we can see that the Header is outside the switch. Why? well
+this is because if we dont do this, the header will keep instancing itself everytime
+we change the page (route) because its repeated, we should not waste effort in writing
+<Header /> two time or more when we can write it once.

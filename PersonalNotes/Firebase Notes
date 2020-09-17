@@ -1,0 +1,12 @@
+Open firebase, create a new proyect, go to config, go all the way to firebase SDK snippet
+and then change to config and copy the info. Create a new file named firebase.js and paste the info 
+
+Then go to authentication, Sign-in method, select the one you want and enable it and click done.
+
+open up a second terminal and write:
+
+    npm install -g firebase-tools
+    npm install firebase
+
+
+if founded vulnerabilities, check if you are in the correct folder in this case "amazon-clone".

@@ -1,0 +1,42 @@
+React Context API/ REDUX
+
+This is a data layer where we can store information to use it later.
+
+1.- Make a StateProvide.js File
+2.- Paste the following:
+
+import React, {createContext, useContext, useReducer} from "react";
+
+// Prepares the dataLayer
+export const StateContext = createContext();
+
+// Wrap our app and provide the Data layer
+export const StateProvider = ({reducer, initialState, children}) => (
+    <StateContext.Provider value={useReducer(reducer, initialState)}>
+        {children}
+    </StateContext.Provider>
+);
+
+// Pull information from the data layer
+export const useStateValue = () => useContext(StateContext);
+
+3.- Warp the <App/> in index.js with <StateProvider ...> 
+    ***for more information compare with index.js
+
+4.- Create a reducer.js file
+    A reducer actually allows us to dispatch the information to the data layer
+    Is like the bridge between the data and the datalayer. (also works as the bridge
+    between the data layer and the place where we want to put that info)
+
+    It know what to do when you add or remove an item from the basket.
+
+    Also look at reducer.js for more info.
+
+remember all the autoimport in index.js
+
+Some notes with this API ---------------------
+
+For using variables (in this case the ones from the basket) we use {var} like this inside
+the html code. This variables are declared at the begining of the function (as its expected)
+Also for getting to the atributes of the items inside the data layer, just use the normal sintaxis
+as other programing languages {basket.length} for example.

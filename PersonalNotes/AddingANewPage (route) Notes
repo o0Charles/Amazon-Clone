@@ -1,0 +1,19 @@
+For making a an extenden page, we must create a new terminal
+and there we will access to the created react-app
+in this case (amazon-clone) with the command:
+    cd
+after that we will intall a react router with this command:
+    npm install react-router-dom
+
+Then in the App.js, import this:
+
+    import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+Then we must wrap the entire app within <Router></Router> and the make use of <switch>
+for every new page that we want to go we will use <Route path="[Name of the route]">. <Route/>
+And inside we will put the COMPONENTS that we want to display in that route.
+
+When onclick we want to go to another site (or page), we will use <Link to=""><Link/> (for example
+look at login__image inside Login.js)
+
+For more information of what to do, see comments in App.js
